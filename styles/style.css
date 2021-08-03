@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@1,700&family=PT+Serif+Caption:ital@1&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.heading {
+    text-align: center;
+    margin: 30px;
+    font-size: 9vmin;
+    color: #fafafa;
+    font-family: 'Istok Web', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    /* padding: 12rem; */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+    margin-top: 9rem;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+
+.box, .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 2rem;
+    width: 30vw;
+    height: 10vw;
+    background-color: #f2ecff;
+    border-radius: 1rem;
+    opacity: 0.7;
+    font-family: 'PT Serif Caption', serif;
+    font-size: 4vmin;
+    transition: 1s ease-out;
+    cursor: pointer;
+}
+
+.container .box:hover {
+    transform: scale(1.1,1.1);
+    background: linear-gradient(to right, #f9f871 70%, #f2ecff);
+    transition: all 3s ease-out;
+}
+
+
+@media only screen and (max-width: 900px){
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .container {
+        margin-top: 4rem;
+    }
+    
+    .box {
+        width: 70vw;
+        height: 12vh;
+        font-size: 5vmin;
+    }
+}
