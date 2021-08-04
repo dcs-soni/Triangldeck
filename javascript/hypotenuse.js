@@ -3,7 +3,7 @@ const firstAngle = document.querySelector(".angle-a");
 const secondAngle = document.querySelector(".angle-b");
 
 //Calculate Button
-const calculateButton = document.querySelector(".calculate");
+const calculateButton = document.querySelector(".check");
 
 //Result
 const result = document.querySelector(".result");

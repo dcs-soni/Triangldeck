@@ -34,7 +34,7 @@ function checkTriangle() {
     if (firstRandomAngle + secondRandomAngle + thirdAngleValue === 180) {
       result.innerText = "Correct!! These angles form a triangle";
     } else {
-      result.innerText = "OOPS :( You need some revision.";
+      result.innerText = "Read here 👇 You need some revision.";
     }
   }
 }
