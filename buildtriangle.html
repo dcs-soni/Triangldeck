@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build a Triangle</title>
+    <link rel="stylesheet" href="styles/buildtriangle.css" />
+  </head>
+  <body>
+    <h1 class="heading">Triangldeck</h1>
+    <div class="container">
+      <div class="introduction">
+        <p class="content">
+          The angle of a triangle is the space formed between two side lengths
+          of a triangle. A triangle contains interior angles and exterior
+          angles. Interior angles are three angles found inside a triangle.
+          Exterior angles are formed when the sides of a triangle are extended
+          to infinity.
+        </p>
+        <hr>
+
+        <p class="content notice">
+          Below given are the two interior angles. Calculate the third angle and
+          write in the output column.
+        </p>
+        <div class="given-angles">
+
+            <p class="a">∠A</p>
+            <div class="first-angle"></div>
+
+            <p class="b">∠B</p>
+            <div class="second-angle"></div>
+        </div>
+      </div>
+
+      <div class="main-area">
+
+        <label for="third-angle">∠C</label>
+        <input class="third-angle" type="number"></input>
+        <button class="check">Check</button>
+
+        <p class="result"> </p>
+      </div>
+    </div>
+
+    <script src="javascript/buildtriangle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@1,700&family=PT+Serif+Caption:ital@1&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.heading {
+    text-align: center;
+    margin: 30px;
+    font-size: 9vmin;
+    color: #fafafa;
+    font-family: 'Istok Web', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 9rem 20rem 0 20rem;
+    margin-top: 9rem;
+
+}
+
+.introduction {
+    width: 40vw;
+    height: 50vh;
+    padding: 2rem;
+    background-color: #f2ecff;
+    border-radius: 2rem;
+
+    
+}
+
+.content {
+    font-size: large;
+    font-family: 'PT Serif Caption', serif;
+}
+
+.notice {
+    margin-top: 1rem;
+}
+
+.given-angles {
+    /* margin: 2rem; */
+    margin-top: 2rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+.third-angle {
+    width: 7vw;
+    height: 6vh;
+    margin: 10px;
+    text-align: center;
+    font-size: large;   
+    border-radius: 10px;
+}
+
+.given-angles {
+    text-align: center;
+    
+
+}
+
+.first-angle, .second-angle {
+    width: 7vw;
+    height: 6vh;
+    margin: 10px;
+    margin-left: 0;
+    text-align: center;
+    font-size: large;   
+    border-radius: 10px;
+    background-color: burlywood;
+}
+
+.first-angle, .a, .second-angle, .b {
+    float: left;
+    width: 20%;
+    height: 20%;
+    padding: 20px;
+    margin-left: 0.1rem;
+    text-align: center;
+}
+
+.a, .b {
+    padding-top: 35px;
+    padding-bottom: 112px;
+}
+
+.main-area {
+    color: #f2ecff;
+    width: 20%;
+    height: 40%;
+}
+
+.result {
+    text-align: center;
+    font-size: larger;
+    font-family: 'PT Serif Caption', serif;
+    margin: 2rem 0rem;
+    width: 30vw;
+}
+
+.check {
+    display: block;
+    width: 14vw;
+    height: 5vh;
+    font-size: large;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    /* margin: 8rem; */
+}
