@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triangles Trivia</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <a href="index.html"><h1 class="heading">Triangldeck</h1></a>
+
+
+    <p class="result"></p>
+
+    <!-- Landing page of trivia -->
+    <div class="main-container">
+      <div class="box area-normal">
+        <a>
+          <button class="btn">Area of △ with 2 sides</button>
+        </a>
+      </div>
+      <div class="box area-herons">
+        <a>
+          <button class="btn">Area of △ using Heron's Formula</button>
+        </a>
+      </div>
+      <div class="box area-sas">
+        <a>
+          <button class="btn">
+            Area of △ with 2 sides and included angles(SAS)
+          </button>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Area if two sides are given -->
+    <div class="display-twosides-container container">
+      <div class="triangle-image">
+        <img src="img/area-two-sides.png" alt="" />
+      </div>
+
+      <div class="input-angle">
+          <label for="angle-a">Base</label>
+          <input class="base angle-a" type="number"></input>
+
+          <label for="angle-b">Height</label>
+          <input class="height angle-b" type="number"></input>
+
+          <button class="calculate calculate-twosides">Calculate</button>
+      </div>
+    </div>
+
+
+
+    <!-- Area using Herons formula when 3 sides are given -->
+    <div class="display-herons-container container">
+      <div class="triangle-image">
+        <img src="img/area-herons.png" alt="" />
+      </div>
+
+      <div class="input-angle">
+          <label for="angle-a">Side a</label>
+          <input class="sideA angle-a" type="number"></input>
+
+          <label for="angle-b">Side b</label>
+          <input class="sideB angle-b" type="number"></input>
+
+          <label for="angle-c">Side c</label>
+          <input class="sideC angle-c" type="number"></input>
+          <button class="calculate calculate-herons">Calculate</button>
+      </div>
+    </div>
+
+    <!-- Area using SAS -->
+    <div class="display-sas-container container">
+      <div class="triangle-image">
+        <img src="img/area-sas.png" alt="" />
+      </div>
+
+      <div class="input-angle">
+          <label for="angle-a">Side b</label>
+          <input class="first-side angle-a" type="number"></input>
+
+          <label for="angle-b">Side c</label>
+          <input class="second-side angle-b" type="number"></input>
+
+          <label for="angle-c">∠A</label>
+          <input class="one-angle angle-c" type="number"></input>
+          <button class="calculate calculate-sas">Calculate</button>
+      </div>
+    </div>
+
+
+    <script src="javascript/trivia.js"></script>
+  </body>
+</html>
