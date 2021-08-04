@@ -13,9 +13,9 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow-y: hidden;
+    
 }
-
 .heading {
     text-align: center;
     margin: 30px;
@@ -24,15 +24,19 @@ body {
     font-family: 'Istok Web', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 9rem 20rem 0 20rem;
+    margin: 12rem 20rem 0 20rem;
     margin-top: 9rem;
 
-}
+}   
 
 .introduction {
     width: 40vw;
@@ -112,8 +116,9 @@ label {
     text-align: center;
     font-size: larger;
     font-family: 'PT Serif Caption', serif;
-    margin: 2rem 0rem;
-    width: 30vw;
+    color: #f2ecff;
+    /* margin: 2rem 0rem; */
+    width: 100vw;
 }
 
 .check {
