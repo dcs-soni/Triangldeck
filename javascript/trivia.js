@@ -6,7 +6,6 @@ const areaSas = document.querySelector(".area-sas");
 //Boxes Container
 const mainContainer = document.querySelector(".main-container");
 
-///Calculate buttonns
 
 //Only for section - area with two sides
 const displayTwoSidesContainer = document.querySelector(
@@ -48,16 +47,19 @@ function hideBoxesOfTrivia() {
 
 function showAreaTwoSidesContainer() {
   hideBoxesOfTrivia();
+  result.style.display = "block";
   displayTwoSidesContainer.style.display = "flex";
 }
 
 function showAreaHeronsContainer() {
   hideBoxesOfTrivia();
+  result.style.display = "block";
   displayHeronsContainer.style.display = "flex";
 }
 
 function showSasContainer() {
   hideBoxesOfTrivia();
+  result.style.display = "block";
   displaySasContainer.style.display = "flex";
 }
 
@@ -67,9 +69,12 @@ function calculateAreaTwoSides() {
   let heightValue = Number(height.value);
 
   let area = (1 / 2) * baseValue * heightValue;
-  // console.log(area);
-  result.style.display = "block";
-  result.innerText = `Area of the triangle is ${area}`;
+  if(baseValue > 0 && heightValue > 0) {
+    result.innerText = `Area of the triangle is ${area}`;
+  } else {
+    result.innerText = "Please enter valid values";
+  }
+  
 }
 
 //Function to calculate area using Herons
@@ -78,6 +83,7 @@ function calculateAreaHerons() {
   let sideBValue = Number(sideB.value);
   let sideCValue = Number(sideC.value);
 
+  //Herons consitions are fulfilled
   if (
     sideAValue + sideBValue > sideCValue &&
     sideBValue + sideCValue > sideAValue &&
@@ -92,10 +98,8 @@ function calculateAreaHerons() {
         (semiPerimeter - sideCValue)
     );
 
-    result.style.display = "block";
     result.innerText = `Area of the triangle is ${areaHerons}`;
   } else {
-    result.style.display = "block";
     result.innerText =
       "Invalid Angles. The sum of one of the 2 angles must be greater than third angle";
   }
@@ -107,16 +111,18 @@ function calculateAreaSas() {
   let secondSideValue = Number(secondSide.value);
   let oneAngleValue = Math.sin((Number(oneAngle.value) * Math.PI) / 180);
 
-  console.log(oneAngleValue);
+  console.log(oneAngleValue); 
 
+  //sin range is taken into consideration
   if (-1 <= oneAngleValue <= 1 && firstSideValue > 1 && secondSideValue > 1) {
     let areaSas = (1 / 2) * (firstSideValue * secondSideValue * oneAngleValue);
 
-    result.style.display = "block";
     result.innerText = `Area of the triangle is ${Math.round(areaSas, 2)}`;
   }
 }
 
+
+//Event Listeners
 areaTwoSides.addEventListener("click", showAreaTwoSidesContainer);
 areaHerons.addEventListener("click", showAreaHeronsContainer);
 areaSas.addEventListener("click", showSasContainer);

@@ -18,13 +18,16 @@ function checkTriangle() {
 
   if (valueA || valueB || valueC <= 0) {
     result.innerText = "Please enter valid angles";
-  }
+  } 
 
   if (valueA + valueB + valueC === 180) {
     result.innerText = "Given angles form a triangle";
-  } else {
+  } 
+  
+  else {
     result.innerText = "These angles donot form a triangle";
   }
+  
 }
 
 checkButton.addEventListener("click", checkTriangle);
