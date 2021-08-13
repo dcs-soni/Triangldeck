@@ -36,6 +36,23 @@ a {
     font-family: 'Istok Web', sans-serif;
 }
 
+.back {
+    float: left;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+    left: 10rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.github-logo {
+    float: right;
+    width: 50px;
+    margin-right: 80px;
+    height: 50px;
+}
+
+
 .main-container {
     display: flex;
     flex-direction: row;
@@ -54,10 +71,8 @@ a {
 .main-container .box {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    margin: 0rem 2rem 2rem 2rem;
+    margin: 0rem 1rem 2rem 1rem;
     padding: 2.5rem 30px;
-    /* text-align: center; */
     width: 60vw;
     height: 3vw;
     opacity: 0.7;
@@ -66,6 +81,11 @@ a {
     font-family: 'PT Serif Caption', serif;
     font-size: 3vmin;
 }
+
+.main-container input {
+    vertical-align: middle;
+}
+
 
 label {
     margin-top: 20px;
@@ -78,7 +98,7 @@ label {
     margin-bottom: 8px;
 }
 
-.btn {
+.submit {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +112,7 @@ label {
     background-color: var(--lightpink);
     border-radius: 10px;
     font-family: 'PT Serif Caption', serif;
-    font-size: 3vmin;
+    font-size: 4vmin;
 }
 
 .box p {
@@ -102,9 +122,59 @@ label {
 
 .result {
     font-family: 'PT Serif Caption', serif;
-    color: var(--lightgrey);
-    font-size: 5vh;
+    color: #f2ecff;
+    font-size: 4vh;
     text-align: center;
-    height: 10vh;
-    /* margin-top: 40px; */
+    margin-top: 40px;
+    width: 30vw;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #f9f871;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .heading {
+        font-size: 3rem;
+        margin-top: 4rem;
+    }
+
+    label {
+        padding-right: 10px;
+    }
+
+    .back {
+        position: absolute;
+        font-size: 15px;
+        top: 15px;
+        left: 0px;
+        margin-left: 2rem;
+    }
+
+    .github-logo {
+        position: absolute;
+        margin-right: 1rem;
+        right: 0px;
+        top: 0px;
+        width: 30px;
+    }
+
+    .main-container .box {
+        width: 90vw;
+        padding: 2rem 15px;
+    }
+
+    .submit {
+        padding: 20px;
+        width: 40vw;
+        height: 1.5vh;
+        /* margin: auto; */
+    }
+
+    .result {
+        margin: 1rem auto;
+        width: 80vw;
+        font-size: 1.5rem;
+    }
+
 }
