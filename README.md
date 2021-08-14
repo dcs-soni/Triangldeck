@@ -22,10 +22,10 @@
 
 ## 💻 **Built with**
 
-<img src="img/html.svg" width="50" height="50" />
-<img src="img/css.svg" width="50" height="50" />
-<img src="img/javascript.svg" width="50" height="50" />
-<img src="img/netlify.svg" width="50" height="50" />
+
+
+<img src="img/html.svg" width="50" height="50" /> &nbsp; <img src="img/css.svg" width="50" height="50" /> &nbsp;  <img src="img/javascript.svg" width="50" height="50" /> &nbsp;  <img src="img/netlify.svg" width="50" height="50" />
+
 
 ![](https://raw.githubusercontent.com/dcs-soni/MinionSpeaks/main/img/aqua-line.png)
 
