@@ -8,7 +8,7 @@
 
 ## 😉 **Glimpses**
 
-<img src="img/triangldeck-desktop-ss.png" width="550" height="300" />&nbsp; &nbsp; &nbsp; &nbsp; <img src="img/triangldeck-mobile-ss.png" width="200" height="300" />
+<img src="img/triangldeck-desktop-ss.png" width="550" height="300" />&nbsp; &nbsp; &nbsp; &nbsp; <img src="img/triangldeck-mobile-ss.png" width="170" height="300" />
 
 👉 Play with [Triangldeck](https://dcs-triangldeck.netlify.app/)
 
@@ -26,3 +26,6 @@
 <img src="img/css.svg" width="50" height="50" />
 <img src="img/javascript.svg" width="50" height="50" />
 <img src="img/netlify.svg" width="50" height="50" />
+
+![](https://raw.githubusercontent.com/dcs-soni/MinionSpeaks/main/img/aqua-line.png)
+
