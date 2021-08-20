@@ -8,16 +8,15 @@ const result = document.querySelector(".result");
 const correctAnswers = ["question1c", "question2d", "question3a", "question4b", "question5b", "question6b", "question7c", "question8c", "question9b", "question10b" ];
 
 let score = 0;
+var userAnswers = []
+
 
 // console.log(questions);
 function getUserAnswers() {
 
     // console.log(questions);
-
-    let userAnswers = []
-
     for(const answer of userInput){
-        console.log(answer);
+        // console.log(answer);
         if(answer.checked){
             userAnswers.push(answer.id);
         }
