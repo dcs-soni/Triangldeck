@@ -23,6 +23,8 @@ function getUserAnswers() {
     }   
 
     checkAnswers();
+    result.innerText = `Your score is ${score}`;
+
     console.log("user", userAnswers);
 
 }
@@ -41,7 +43,6 @@ function checkAnswers() {
          }
     }
 
-    result.innerText = `Your score is ${score}`;
 }
 
 submit.addEventListener("click", getUserAnswers);
