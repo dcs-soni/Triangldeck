@@ -114,10 +114,12 @@ function calculateAreaSas() {
   console.log(oneAngleValue); 
 
   //sin range is taken into consideration
-  if (-1 <= oneAngleValue <= 1 && firstSideValue > 1 && secondSideValue > 1) {
-    let areaSas = (1 / 2) * (firstSideValue * secondSideValue * oneAngleValue);
-
-    result.innerText = `Area of the triangle is ${Math.round(areaSas, 2)}`;
+  if (oneAngleValue > 0 && firstSideValue > 0 && secondSideValue > 0) {
+    let areaSas = (firstSideValue * secondSideValue * oneAngleValue) / 2;
+    console.log(areaSas);
+    result.innerText = `Area of the triangle is ${areaSas.toFixed(3)}`;
+  } else {
+    result.innerText = "Invalid Inputs";
   }
 }
 

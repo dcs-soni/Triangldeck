@@ -12,7 +12,7 @@ function calculateHypotenuse() {
   let firstAngleValue = Number(firstAngle.value);
   let secondAngleValue = Number(secondAngle.value);
 
-  if(firstAngleValue === 0 || secondAngleValue === 0) {
+  if(firstAngleValue <= 0 || secondAngleValue <= 0) {
     result.style.display = "block";
     result.innerText = "Please enter valid angle values";
   } else {

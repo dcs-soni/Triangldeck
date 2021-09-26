@@ -20,7 +20,7 @@ function checkTriangle() {
     result.innerText = "Please enter valid angles";
   } 
 
-  if (valueA + valueB + valueC === 180) {
+  else if (valueA + valueB + valueC === 180) {
     result.innerText = "Given angles form a triangle";
   } 
   
